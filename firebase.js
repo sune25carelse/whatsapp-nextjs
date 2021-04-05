@@ -1,6 +1,8 @@
 import firebase from "firebase";
 // config goes here
 
+
+
 // connection to database setup goes here initialize first
 const app = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)
