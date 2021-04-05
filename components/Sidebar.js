@@ -24,6 +24,8 @@ function Sidebar() {
       </Search>
 
       <SidebarButton>Start a new chat</SidebarButton>
+      {/* List of Chats */}
+      
     </Container>
   );
 }
