@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Whatasapp 2.0</title>
+        <title>Whatsapp 2.0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Sidebar />
