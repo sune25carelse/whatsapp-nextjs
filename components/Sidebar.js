@@ -7,11 +7,11 @@ import * as EmailValidator from "email-validator";
 
 function Sidebar() {
   const createChat = () => {
-    const input = prompt("Please eneter email for user you wnat to chat to");
+    const input = prompt("Please enter email for user you wish to chat to");
 
     if (!input) return null;
     if (EmailValidator.validate(input)) {
-      // here we need to add the chat into the DB
+      // here we need to add the chat into DB
     }
   };
 

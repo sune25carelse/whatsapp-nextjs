@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import Head from "next/head";
 import styled from "styled-components";
 
@@ -10,6 +11,7 @@ function Login() {
 
       <LoginContainer>
         <Logo src="https://seeklogo.net/wp-content/uploads/2012/11/liverbir-vector-logo-400x400.png" />
+        <Button variant="outlined">Sign in with Google</Button>
       </LoginContainer>
     </Container>
   );
@@ -17,8 +19,19 @@ function Login() {
 
 export default Login;
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: grid;
+  place-items: center;
+  height: 100vh;
+`;
 
-const LoginContainer = styled.div``;
+const LoginContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-const Logo = styled.img``;
+const Logo = styled.img`
+  height: 200px;
+  width: 200px;
+  margin-bottom: 50px;
+`;
