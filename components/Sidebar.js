@@ -20,8 +20,12 @@ function Sidebar() {
 
     if (!input) return null;
 
-    if (EmailValidator.validate(input) && input !== user.email) {
-      // here we need to add the chat into DB
+    if (
+      EmailValidator.validate(input) &&
+      !chatAlreadyExists(input) &&
+      input !== user.email
+    ) {
+      // here we need to add the chat into DB, if it doesnt already exist and is valid
       db.collection("chats").add({
         users: [user.email, input],
       });
