@@ -19,6 +19,15 @@ function Chat() {
 
 export default Chat;
 
+export async function getServerSideProps(context) {
+  const ref = db.collection("chats").doc(context.query.id);
+
+  const messagesRes = await ref
+    .collection("messages")
+    .order("timestamp", "asc")
+    .get();
+}
+
 const Container = styled.div`
   display: flex;
 `;
