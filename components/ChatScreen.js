@@ -73,7 +73,7 @@ function ChatScreen({ chat, messages }) {
 
         <HeaderInformation>
           <h3>{recipientEmail}</h3>
-          <p>Last Seen ...</p>
+          <p>Last Seen ....</p>
         </HeaderInformation>
         <HeaderIcons>
           <IconButton>
