@@ -12,7 +12,7 @@ function Message({ user, message }) {
       <TypeOfMessage>
         {message.message}
         <Timestamp>
-          {messgae.timestamp ? moment(message.timestamp).format("LT") : "..."}
+          {message.timestamp ? moment(message.timestamp).format("LT") : "..."}
         </Timestamp>
       </TypeOfMessage>
     </Container>
